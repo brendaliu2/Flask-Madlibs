@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Madlibs! {% endblock %}
+
+{% block content %}
+
+<h1 class="pt-4 mb-3 text-center">Home Page</h1>
+
+<form action="/questions" method="get" class="pb-4">
+
+  <select name="story-type" id="story-type">
+    <option value="silly_story">Silly Story</option>
+    <option value="excited_story">Excited Story</option>
+  </select>
+  <button class="btn btn-primary btn-lg w-100">
+    Choose My Template!
+  </button>
+
+</form>
+
+
+{% endblock %}
